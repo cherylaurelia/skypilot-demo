@@ -104,7 +104,7 @@ export default function Page() {
         SkyPilot managed jobs · bug report with a patch
       </p>
       <h1 className="mt-3 text-3xl font-semibold leading-tight sm:text-4xl">
-        A wall clock step on the jobs controller fails every running managed job.
+        A wall clock step on the jobs controller fails every managed job running on it.
       </h1>
       <p className="mt-4 text-lg text-muted">
         <code className="font-mono text-base">controller_process_alive</code> compares psutil&apos;s
