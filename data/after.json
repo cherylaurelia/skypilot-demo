@@ -1,0 +1,91 @@
+{
+ "prefix": "a",
+ "summary": {
+  "control": {
+   "runs": 1,
+   "FAILED_CONTROLLER": 0,
+   "SUCCEEDED": 1
+  },
+  "step": {
+   "runs": 2,
+   "FAILED_CONTROLLER": 0,
+   "SUCCEEDED": 2
+  }
+ },
+ "runs": [
+  {
+   "run": "actl1",
+   "step_s": 0,
+   "running_at": "07:48:42",
+   "btime_before": 1794552325,
+   "stepped_at": null,
+   "btime_after_step": null,
+   "btime_end": 1794552325,
+   "events": [
+    {
+     "t": "07:48:45",
+     "job": "RUNNING",
+     "pod": "actl1-1-11b1fa5c-head"
+    },
+    {
+     "t": "07:55:38",
+     "job": "SUCCEEDED",
+     "pod": "none"
+    }
+   ],
+   "recoveries": 0,
+   "final": "SUCCEEDED",
+   "log": "runs/actl1.clockstep.log"
+  },
+  {
+   "run": "astep1",
+   "step_s": 60,
+   "running_at": "07:56:30",
+   "btime_before": 1794552325,
+   "stepped_at": "07:56:31",
+   "btime_after_step": 1794552384,
+   "btime_end": 1794552384,
+   "events": [
+    {
+     "t": "07:56:33",
+     "job": "RUNNING",
+     "pod": "astep1-2-11b1fa5c-head"
+    },
+    {
+     "t": "08:03:28",
+     "job": "SUCCEEDED",
+     "pod": "none"
+    }
+   ],
+   "recoveries": 0,
+   "final": "SUCCEEDED",
+   "log": "runs/astep1.clockstep.log"
+  },
+  {
+   "run": "astep2",
+   "step_s": 60,
+   "running_at": "08:04:32",
+   "btime_before": 1794552325,
+   "stepped_at": "08:04:32",
+   "btime_after_step": 1794552384,
+   "btime_end": 1794552384,
+   "events": [
+    {
+     "t": "08:04:39",
+     "job": "RUNNING",
+     "pod": "astep2-3-11b1fa5c-head"
+    },
+    {
+     "t": "08:11:22",
+     "job": "SUCCEEDED",
+     "pod": "none"
+    }
+   ],
+   "recoveries": 0,
+   "final": "SUCCEEDED",
+   "log": "runs/astep2.clockstep.log"
+  }
+ ],
+ "version": "1.0.0.dev20261112",
+ "evidence": []
+}

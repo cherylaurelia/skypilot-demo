@@ -1,0 +1,9 @@
+07:48:10 job id 1, clock step 0s
+07:48:42 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:48:45 job=RUNNING pod=actl1-1-11b1fa5c-head
+07:55:38 job=SUCCEEDED pod=none
+07:55:39 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME   REQUESTED  SUBMITTED   TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+1   -     actl1  1x[CPU:1]  7 mins ago  7m 25s         7m 4s         0            SUCCEEDED  -         -     
+202:Cluster of managed job 1 has been cleaned up.

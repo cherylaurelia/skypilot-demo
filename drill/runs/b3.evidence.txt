@@ -1,0 +1,8 @@
+# skylet.log on the jobs controller, after b3step1 (job 8)
+Controller process for 8 seems to be dead.
+Controller process for job 8 has exited abnormally. Setting the job status to FAILED_CONTROLLER.
+Controller process has exited abnormally (Controller process is dead). For more details, run: sky jobs logs --controller 8
+# ps on the controller pod afterwards: the original controller is still running
+$ ps -o pid=,lstart= -p 1200 -p 59759
+   1200 Fri Nov 13 06:46:50 2026
+  59759 Fri Nov 13 07:26:51 2026

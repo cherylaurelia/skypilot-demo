@@ -1,0 +1,40 @@
+batch btime: btime 1794552325
+=== actl1 step=0 2026-11-13T07:47:49Z Now drawing from 'Battery Power' btime 1794552325
+07:48:10 job id 1, clock step 0s
+07:48:42 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:48:45 job=RUNNING pod=actl1-1-11b1fa5c-head
+07:55:38 job=SUCCEEDED pod=none
+07:55:39 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME   REQUESTED  SUBMITTED   TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+1   -     actl1  1x[CPU:1]  7 mins ago  7m 25s         7m 4s         0            SUCCEEDED  -         -     
+202:Cluster of managed job 1 has been cleaned up.
+=== astep1 step=60 2026-11-13T07:55:44Z Now drawing from 'Battery Power' btime 1794552325
+07:55:53 job id 2, clock step 60s
+07:56:30 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:56:31 stepped VM clock by 60s; btime after: btime 1794552384
+07:56:33 job=RUNNING pod=astep1-2-11b1fa5c-head
+08:03:28 job=SUCCEEDED pod=none
+08:03:28 end btime: btime 1794552384
+Fetching managed job statuses...
+ID  TASK  NAME    REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+2   -     astep1  1x[CPU:1]  7 mins ago   8m 27s         8m 2s         0            SUCCEEDED  -         -     
+199:Cluster of managed job 2 has been cleaned up.
+restored: btime 1794552325
+=== astep2 step=60 2026-11-13T08:03:39Z Now drawing from 'Battery Power' btime 1794552325
+08:03:56 job id 3, clock step 60s
+08:04:32 RUNNING at checkpoint step 8; btime before: btime 1794552325
+08:04:32 stepped VM clock by 60s; btime after: btime 1794552384
+08:04:39 job=RUNNING pod=astep2-3-11b1fa5c-head
+08:11:22 job=SUCCEEDED pod=none
+08:11:22 end btime: btime 1794552384
+Fetching managed job statuses...
+ID  TASK  NAME    REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+3   -     astep2  1x[CPU:1]  7 mins ago   8m 25s         8m 3s         0            SUCCEEDED  -         -     
+199:Cluster of managed job 3 has been cleaned up.
+restored: btime 1794552324
+=== astep3 step=60 2026-11-13T08:16:54Z Now drawing from 'Battery Power' btime 1794552324
+08:17:04 job id 4, clock step 60s
+08:17:41 RUNNING at checkpoint step 5; btime before: btime 1794552324
+08:17:42 stepped VM clock by 60s; btime after: btime 1794552384
+08:17:44 job=RUNNING pod=astep3-4-11b1fa5c-head

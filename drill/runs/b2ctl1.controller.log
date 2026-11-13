@@ -1,0 +1,200 @@
+Starting job loop for 4
+  log_file=/home/sky/sky_logs/jobs_controller/4.log
+  pool=None
+From controller 6ef20e41-da21-49c0-b317-321940289b18
+  pid=1200
+Loading 19 environment variables for job 4
+Initializing JobsController for job_id=4
+Rank for job 4: 0
+Loaded DAG: DAG:
+[Task<name=b2ctl1>(run='python3 - <<'PY'\nim...')
+  resources: Kubernetes(cpus=1, mem=1, region=kind-skypilot)]
+Starting JobsController run for job 4
+Processing task 0/0: b2ctl1
+Starting task 0 (b2ctl1) for job 4
+Launching the spot cluster...
+Submitted managed job 4 (task: 0, name: 'b2ctl1'); SKYPILOT_TASK_ID: sky-managed-2026-11-13-06-55-42-403784_b2ctl1_4-0
+Started monitoring.
+Starting job 4
+[2m├── [0mSkyPilot API server and dashboard: http://127.0.0.1:46580
+[2m└── [0mView API server logs at: ~/.sky/api_server/server.log
+API server started.
+Running on cluster: b2ctl1-4
+Considered resources (1 node):
+--------------------------------------------------------------------------------------
+ INFRA                        INSTANCE   vCPUs   Mem(GB)   GPUS   COST ($)   CHOSEN   
+--------------------------------------------------------------------------------------
+ Kubernetes (kind-skypilot)   -          1       1         -      0.00       [32m   ✔[0m     
+--------------------------------------------------------------------------------------
+[0m⚙︎ Launching on Kubernetes.
+[2m└── [0m[2mPod is up.[0m
+[0m[32m✓ Cluster launched: b2ctl1-4.[0m[0m  [2mView logs: [1msky logs --provision b2ctl1-4[0m[0m
+[0m⚙︎ Syncing files.
+[0m⚙︎ Job submitted, ID: 1
+
+Managed job cluster launched.
+Managed job cluster launched.
+Job status: JobStatus.RUNNING
+Cluster launch completed in 17.15s
+Job started.
+Started monitoring.
+Job status: JobStatus.RUNNING
+Job status: JobStatus.RUNNING (unchanged for 6m 43s, 26 checks)
+Job status: JobStatus.SUCCEEDED
+Task 0 succeeded! Getting end time and cleaning up
+Job succeeded.
+Managed job 4 (task: 0) SUCCEEDED. Cleaning up the cluster b2ctl1-4.
+Downloading logs on cluster b2ctl1-4 and job id None.
+[2m├── [0m[2mWaiting for task resources on 1 node.[0m
+[2m└── [0mJob started. Streaming logs... [2m(Ctrl-C to exit log streaming; job will not be killed)[0m
+[36m(b2ctl1, pid=1035)[0m STARTED from step 0
+[36m(b2ctl1, pid=1035)[0m step 1
+[36m(b2ctl1, pid=1035)[0m step 2
+[36m(b2ctl1, pid=1035)[0m step 3
+[36m(b2ctl1, pid=1035)[0m step 4
+[36m(b2ctl1, pid=1035)[0m step 5
+[36m(b2ctl1, pid=1035)[0m step 6
+[36m(b2ctl1, pid=1035)[0m step 7
+[36m(b2ctl1, pid=1035)[0m step 8
+[36m(b2ctl1, pid=1035)[0m step 9
+[36m(b2ctl1, pid=1035)[0m step 10
+[36m(b2ctl1, pid=1035)[0m step 11
+[36m(b2ctl1, pid=1035)[0m step 12
+[36m(b2ctl1, pid=1035)[0m step 13
+[36m(b2ctl1, pid=1035)[0m step 14
+[36m(b2ctl1, pid=1035)[0m step 15
+[36m(b2ctl1, pid=1035)[0m step 16
+[36m(b2ctl1, pid=1035)[0m step 17
+[36m(b2ctl1, pid=1035)[0m step 18
+[36m(b2ctl1, pid=1035)[0m step 19
+[36m(b2ctl1, pid=1035)[0m step 20
+[36m(b2ctl1, pid=1035)[0m step 21
+[36m(b2ctl1, pid=1035)[0m step 22
+[36m(b2ctl1, pid=1035)[0m step 23
+[36m(b2ctl1, pid=1035)[0m step 24
+[36m(b2ctl1, pid=1035)[0m step 25
+[36m(b2ctl1, pid=1035)[0m step 26
+[36m(b2ctl1, pid=1035)[0m step 27
+[36m(b2ctl1, pid=1035)[0m step 28
+[36m(b2ctl1, pid=1035)[0m step 29
+[36m(b2ctl1, pid=1035)[0m step 30
+[36m(b2ctl1, pid=1035)[0m step 31
+[36m(b2ctl1, pid=1035)[0m step 32
+[36m(b2ctl1, pid=1035)[0m step 33
+[36m(b2ctl1, pid=1035)[0m step 34
+[36m(b2ctl1, pid=1035)[0m step 35
+[36m(b2ctl1, pid=1035)[0m step 36
+[36m(b2ctl1, pid=1035)[0m step 37
+[36m(b2ctl1, pid=1035)[0m step 38
+[36m(b2ctl1, pid=1035)[0m step 39
+[36m(b2ctl1, pid=1035)[0m step 40
+[36m(b2ctl1, pid=1035)[0m step 41
+[36m(b2ctl1, pid=1035)[0m step 42
+[36m(b2ctl1, pid=1035)[0m step 43
+[36m(b2ctl1, pid=1035)[0m step 44
+[36m(b2ctl1, pid=1035)[0m step 45
+[36m(b2ctl1, pid=1035)[0m step 46
+[36m(b2ctl1, pid=1035)[0m step 47
+[36m(b2ctl1, pid=1035)[0m step 48
+[36m(b2ctl1, pid=1035)[0m step 49
+[36m(b2ctl1, pid=1035)[0m step 50
+[36m(b2ctl1, pid=1035)[0m step 51
+[36m(b2ctl1, pid=1035)[0m step 52
+[36m(b2ctl1, pid=1035)[0m step 53
+[36m(b2ctl1, pid=1035)[0m step 54
+[36m(b2ctl1, pid=1035)[0m step 55
+[36m(b2ctl1, pid=1035)[0m step 56
+[36m(b2ctl1, pid=1035)[0m step 57
+[36m(b2ctl1, pid=1035)[0m step 58
+[36m(b2ctl1, pid=1035)[0m step 59
+[36m(b2ctl1, pid=1035)[0m step 60
+[36m(b2ctl1, pid=1035)[0m step 61
+[36m(b2ctl1, pid=1035)[0m step 62
+[36m(b2ctl1, pid=1035)[0m step 63
+[36m(b2ctl1, pid=1035)[0m step 64
+[36m(b2ctl1, pid=1035)[0m step 65
+[36m(b2ctl1, pid=1035)[0m step 66
+[36m(b2ctl1, pid=1035)[0m step 67
+[36m(b2ctl1, pid=1035)[0m step 68
+[36m(b2ctl1, pid=1035)[0m step 69
+[36m(b2ctl1, pid=1035)[0m step 70
+[36m(b2ctl1, pid=1035)[0m step 71
+[36m(b2ctl1, pid=1035)[0m step 72
+[36m(b2ctl1, pid=1035)[0m step 73
+[36m(b2ctl1, pid=1035)[0m step 74
+[36m(b2ctl1, pid=1035)[0m step 75
+[36m(b2ctl1, pid=1035)[0m step 76
+[36m(b2ctl1, pid=1035)[0m step 77
+[36m(b2ctl1, pid=1035)[0m step 78
+[36m(b2ctl1, pid=1035)[0m step 79
+[36m(b2ctl1, pid=1035)[0m step 80
+[36m(b2ctl1, pid=1035)[0m step 81
+[36m(b2ctl1, pid=1035)[0m step 82
+[36m(b2ctl1, pid=1035)[0m step 83
+[36m(b2ctl1, pid=1035)[0m step 84
+[36m(b2ctl1, pid=1035)[0m step 85
+[36m(b2ctl1, pid=1035)[0m step 86
+[36m(b2ctl1, pid=1035)[0m step 87
+[36m(b2ctl1, pid=1035)[0m step 88
+[36m(b2ctl1, pid=1035)[0m step 89
+[36m(b2ctl1, pid=1035)[0m step 90
+[36m(b2ctl1, pid=1035)[0m step 91
+[36m(b2ctl1, pid=1035)[0m step 92
+[36m(b2ctl1, pid=1035)[0m step 93
+[36m(b2ctl1, pid=1035)[0m step 94
+[36m(b2ctl1, pid=1035)[0m step 95
+[36m(b2ctl1, pid=1035)[0m step 96
+[36m(b2ctl1, pid=1035)[0m step 97
+[36m(b2ctl1, pid=1035)[0m step 98
+[36m(b2ctl1, pid=1035)[0m step 99
+[36m(b2ctl1, pid=1035)[0m step 100
+[36m(b2ctl1, pid=1035)[0m step 101
+[36m(b2ctl1, pid=1035)[0m step 102
+[36m(b2ctl1, pid=1035)[0m step 103
+[36m(b2ctl1, pid=1035)[0m step 104
+[36m(b2ctl1, pid=1035)[0m step 105
+[36m(b2ctl1, pid=1035)[0m step 106
+[36m(b2ctl1, pid=1035)[0m step 107
+[36m(b2ctl1, pid=1035)[0m step 108
+[36m(b2ctl1, pid=1035)[0m step 109
+[36m(b2ctl1, pid=1035)[0m step 110
+[36m(b2ctl1, pid=1035)[0m step 111
+[36m(b2ctl1, pid=1035)[0m step 112
+[36m(b2ctl1, pid=1035)[0m step 113
+[36m(b2ctl1, pid=1035)[0m step 114
+[36m(b2ctl1, pid=1035)[0m step 115
+[36m(b2ctl1, pid=1035)[0m step 116
+[36m(b2ctl1, pid=1035)[0m step 117
+[36m(b2ctl1, pid=1035)[0m step 118
+[36m(b2ctl1, pid=1035)[0m step 119
+[36m(b2ctl1, pid=1035)[0m step 120
+[36m(b2ctl1, pid=1035)[0m step 121
+[36m(b2ctl1, pid=1035)[0m step 122
+[36m(b2ctl1, pid=1035)[0m step 123
+[36m(b2ctl1, pid=1035)[0m step 124
+[36m(b2ctl1, pid=1035)[0m step 125
+[36m(b2ctl1, pid=1035)[0m step 126
+[36m(b2ctl1, pid=1035)[0m step 127
+[36m(b2ctl1, pid=1035)[0m step 128
+[36m(b2ctl1, pid=1035)[0m step 129
+[36m(b2ctl1, pid=1035)[0m step 130
+[36m(b2ctl1, pid=1035)[0m step 131
+[36m(b2ctl1, pid=1035)[0m step 132
+[36m(b2ctl1, pid=1035)[0m step 133
+[36m(b2ctl1, pid=1035)[0m step 134
+[36m(b2ctl1, pid=1035)[0m step 135
+[36m(b2ctl1, pid=1035)[0m step 136
+[36m(b2ctl1, pid=1035)[0m step 137
+[36m(b2ctl1, pid=1035)[0m step 138
+[36m(b2ctl1, pid=1035)[0m step 139
+[36m(b2ctl1, pid=1035)[0m step 140
+[36m(b2ctl1, pid=1035)[0m DONE at step 140
+
+== End of logs (ID: 4) ==
+Task 0 completed in 445.72s with success=True
+Cancellation skipped, job is already terminal
+Cancellation skipped, job is not CANCELLING
+Cluster(s) not found: [1mb2ctl1-4[0m.
+b2ctl1-4 is down
+Cluster of managed job 4 has been cleaned up.
+

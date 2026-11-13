@@ -1,0 +1,75 @@
+batch btime: btime 1794552325
+=== b3ctl1 step=0 2026-11-13T07:14:23Z Now drawing from 'AC Power' btime 1794552325
+07:14:31 job id 7, clock step 0s
+07:15:05 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:15:07 job=RUNNING pod=b3ctl1-7-11b1fa5c-head
+07:21:54 job=SUCCEEDED pod=b3ctl1-7-11b1fa5c-head
+07:21:55 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+7   -     b3ctl1   1x[CPU:1]  7 mins ago   7m 24s         7m 4s         0            SUCCEEDED  -         -     
+199:Cluster of managed job 7 has been cleaned up.
+=== b3step1 step=60 2026-11-13T07:22:00Z Now drawing from 'AC Power' btime 1794552325
+07:22:09 job id 8, clock step 60s
+07:22:50 RUNNING at checkpoint step 6; btime before: btime 1794552325
+07:22:51 stepped VM clock by 60s; btime after: btime 1794552385
+07:22:53 job=RUNNING pod=b3step1-8-11b1fa5c-head
+07:26:54 job=FAILED_CONTROLLER pod=none
+07:26:54 end btime: btime 1794552385
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+8   -     b3step1  1x[CPU:1]  4 mins ago   5m 47s         5m 21s        0            FAILED_CONTROLLER  -         -     
+restored: btime 1794552325
+=== b3ctl2 step=0 2026-11-13T07:27:06Z Now drawing from 'AC Power' btime 1794552325
+07:27:15 job id 9, clock step 0s
+07:27:45 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:27:47 job=RUNNING pod=b3ctl2-9-11b1fa5c-head
+07:34:48 job=SUCCEEDED pod=none
+07:34:49 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+9   -     b3ctl2   1x[CPU:1]  7 mins ago   7m 22s         7m 4s         0            SUCCEEDED          -         -     
+199:Cluster of managed job 9 has been cleaned up.
+=== b3step2 step=60 2026-11-13T07:34:53Z Now drawing from 'Battery Power' btime 1794552325
+07:35:02 job id 10, clock step 60s
+07:35:35 RUNNING at checkpoint step 6; btime before: btime 1794552325
+07:35:35 stepped VM clock by 60s; btime after: btime 1794552384
+07:35:38 job=RUNNING pod=b3step2-10-11b1fa5c-head
+07:36:57 job=FAILED_CONTROLLER pod=none
+07:36:58 end btime: btime 1794552384
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+10  -     b3step2  1x[CPU:1]  2 mins ago   2m 57s         2m 39s        0            FAILED_CONTROLLER  -         -     
+53:Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+72:sky.exceptions.ManagedJobStatusError: Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+74:Unexpected error occurred: [sky.exceptions.ManagedJobStatusError] Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+81:Task 0 (b3step2) has already been executed (FAILED_CONTROLLER). Skipping...
+88:Cluster of managed job 10 has been cleaned up.
+restored: btime 1794552325
+=== b3ctl3 step=0 2026-11-13T07:37:09Z Now drawing from 'Battery Power' btime 1794552325
+07:37:19 job id 11, clock step 0s
+07:37:52 RUNNING at checkpoint step 6; btime before: btime 1794552325
+07:37:54 job=RUNNING pod=b3ctl3-11-11b1fa5c-head
+07:44:54 job=SUCCEEDED pod=none
+07:44:54 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+11  -     b3ctl3   1x[CPU:1]  7 mins ago   7m 22s         7m 4s         0            SUCCEEDED          -         -     
+199:Cluster of managed job 11 has been cleaned up.
+=== b3step3 step=60 2026-11-13T07:44:59Z Now drawing from 'Battery Power' btime 1794552325
+07:45:08 job id 12, clock step 60s
+07:45:41 RUNNING at checkpoint step 6; btime before: btime 1794552325
+07:45:42 stepped VM clock by 60s; btime after: btime 1794552384
+07:45:44 job=RUNNING pod=b3step3-12-11b1fa5c-head
+07:46:59 job=FAILED_CONTROLLER pod=none
+07:47:00 end btime: btime 1794552384
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+12  -     b3step3  1x[CPU:1]  1 min ago    2m 54s         2m 35s        0            FAILED_CONTROLLER  -         -     
+restored: btime 1794552325
+=== done 2026-11-13T07:47:18Z
+2026-11-13 02:40:14 -0500 Assertions          	PID 516(Safari) Released PreventUserIdleDisplaySleep "com.apple.WebCore: HTMLMediaElement playback" 00:00:00  id:0x0x50000903a [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]          
+2026-11-13 02:40:15 -0500 Assertions          	PID 516(Safari) Created PreventUserIdleDisplaySleep "com.apple.WebCore: HTMLMediaElement playback" 00:00:00  id:0x0x50000903c [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]          
+2026-11-13 02:43:28 -0500 Assertions          	PID 519(sharingd) Released PreventUserIdleSystemSleep "Handoff" 00:04:26  id:0x0x100009021 [System: PrevIdle PrevDisp IntPrevDisp kDisp]          
+2026-11-13 02:43:57 -0500 Assertions          	PID 108(powerd) TimedOut InternalPreventDisplaySleep "com.apple.powermanagement.delayDisplayOff" 00:02:00  id:0x0x10000084f3 [System: PrevIdle PrevDisp IntPrevDisp kDisp]          
+2026-11-13 02:46:05 -0500 Assertions          	PID 108(powerd) TurnedOn InternalPreventDisplaySleep "com.apple.powermanagement.delayDisplayOff" 00:00:00  id:0x0x10000084f3 [System: PrevIdle PrevDisp IntPrevDisp kDisp]          

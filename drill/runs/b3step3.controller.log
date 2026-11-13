@@ -1,0 +1,42 @@
+Starting job loop for 12
+  log_file=/home/sky/sky_logs/jobs_controller/12.log
+  pool=None
+From controller 6ef20e41-da21-49c0-b317-321940289b18
+  pid=1200
+Loading 19 environment variables for job 12
+Initializing JobsController for job_id=12
+Rank for job 12: 0
+Loaded DAG: DAG:
+[Task<name=b3step3>(run='python3 - <<'PY'\nim...')
+  resources: Kubernetes(cpus=1, mem=1, region=kind-skypilot)]
+Starting JobsController run for job 12
+Processing task 0/0: b3step3
+Starting task 0 (b3step3) for job 12
+Launching the spot cluster...
+Submitted managed job 12 (task: 0, name: 'b3step3'); SKYPILOT_TASK_ID: sky-managed-2026-11-13-07-45-09-881820_b3step3_12-0
+Started monitoring.
+Starting job 12
+[2m├── [0mSkyPilot API server and dashboard: http://127.0.0.1:46580
+[2m└── [0mView API server logs at: ~/.sky/api_server/server.log
+API server started.
+Running on cluster: b3step3-12
+Considered resources (1 node):
+--------------------------------------------------------------------------------------
+ INFRA                        INSTANCE   vCPUs   Mem(GB)   GPUS   COST ($)   CHOSEN   
+--------------------------------------------------------------------------------------
+ Kubernetes (kind-skypilot)   -          1       1         -      0.00       [32m   ✔[0m     
+--------------------------------------------------------------------------------------
+[0m⚙︎ Launching on Kubernetes.
+[2m└── [0m[2mPod is up.[0m
+[0m[32m✓ Cluster launched: b3step3-12.[0m[0m  [2mView logs: [1msky logs --provision b3step3-12[0m[0m
+[0m⚙︎ Syncing files.
+[0m⚙︎ Job submitted, ID: 1
+
+Managed job cluster launched.
+Managed job cluster launched.
+Job status: JobStatus.RUNNING
+Cluster launch completed in 16.41s
+Job started.
+Started monitoring.
+Job status: JobStatus.RUNNING
+

@@ -1,0 +1,9 @@
+07:14:31 job id 7, clock step 0s
+07:15:05 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:15:07 job=RUNNING pod=b3ctl1-7-11b1fa5c-head
+07:21:54 job=SUCCEEDED pod=b3ctl1-7-11b1fa5c-head
+07:21:55 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+7   -     b3ctl1   1x[CPU:1]  7 mins ago   7m 24s         7m 4s         0            SUCCEEDED  -         -     
+199:Cluster of managed job 7 has been cleaned up.

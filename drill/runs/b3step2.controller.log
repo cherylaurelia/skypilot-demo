@@ -1,0 +1,89 @@
+Starting job loop for 10
+  log_file=/home/sky/sky_logs/jobs_controller/10.log
+  pool=None
+From controller f4fd0521-1f04-4c3d-982d-743e55823ba6
+  pid=59759
+Loading 19 environment variables for job 10
+Initializing JobsController for job_id=10
+Rank for job 10: 0
+Loaded DAG: DAG:
+[Task<name=b3step2>(run='python3 - <<'PY'\nim...')
+  resources: Kubernetes(cpus=1, mem=1, region=kind-skypilot)]
+Starting JobsController run for job 10
+Processing task 0/0: b3step2
+Starting task 0 (b3step2) for job 10
+Launching the spot cluster...
+Submitted managed job 10 (task: 0, name: 'b3step2'); SKYPILOT_TASK_ID: sky-managed-2026-11-13-07-35-02-913669_b3step2_10-0
+Started monitoring.
+Starting job 10
+[2m├── [0mSkyPilot API server and dashboard: http://127.0.0.1:46580
+[2m└── [0mView API server logs at: ~/.sky/api_server/server.log
+API server started.
+Running on cluster: b3step2-10
+Considered resources (1 node):
+--------------------------------------------------------------------------------------
+ INFRA                        INSTANCE   vCPUs   Mem(GB)   GPUS   COST ($)   CHOSEN   
+--------------------------------------------------------------------------------------
+ Kubernetes (kind-skypilot)   -          1       1         -      0.00       [32m   ✔[0m     
+--------------------------------------------------------------------------------------
+[0m⚙︎ Launching on Kubernetes.
+[2m└── [0m[2mPod is up.[0m
+[0m[32m✓ Cluster launched: b3step2-10.[0m[0m  [2mView logs: [1msky logs --provision b3step2-10[0m[0m
+[0m⚙︎ Syncing files.
+[0m⚙︎ Job submitted, ID: 1
+
+Managed job cluster launched.
+Managed job cluster launched.
+Job status: JobStatus.RUNNING
+Cluster launch completed in 16.35s
+Job started.
+Started monitoring.
+Job status: JobStatus.RUNNING
+Job status: JobStatus.RUNNING (unchanged for 2m 15s, 6 checks)
+Cluster b3step2-10 not found.
+Cluster is preempted or failed. Recovering...
+Recent cluster events:
+  2026-11-13 07:35:05: Setting up SkyPilot runtime on cluster
+  2026-11-13 07:35:13: Cluster successfully provisioned with 1 nodes
+  2026-11-13 07:35:13: Syncing file mounts
+  2026-11-13 07:35:13: Running setup commands to install dependencies
+  2026-11-13 07:35:17: All nodes up; SkyPilot runtime healthy.
+Starting recovery for task 0, it is currently None
+=== Recovering... ===
+Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+Unexpected error in JobsController run for task 0
+Traceback (most recent call last):
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/controller.py", line 3272, in run
+    succeeded = await self._run_one_task(task_id, task)
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/controller.py", line 1342, in _run_one_task
+    return await self._monitor_one_task(
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/controller.py", line 1524, in _monitor_one_task
+    return await self._monitor_one_task_impl(
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/controller.py", line 2242, in _monitor_one_task_impl
+    await managed_job_state.set_recovering_async(
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/state.py", line 4327, in set_recovering_async
+    await _retry_task_status_update(
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/state.py", line 755, in _retry_task_status_update
+    await db_retries.with_db_retries_async(_op)
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/utils/db/retries.py", line 264, in with_db_retries_async
+    result = await coro_fn(attempt)
+  File "/home/sky/skypilot-runtime/lib/python3.10/site-packages/sky/jobs/state.py", line 753, in _op
+    raise exceptions.ManagedJobStatusError(message)
+sky.exceptions.ManagedJobStatusError: Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+
+Unexpected error occurred: [sky.exceptions.ManagedJobStatusError] Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+Job 10 task 0 is cancelling or terminal; retrying the job loop to let it complete.
+Loaded DAG: DAG:
+[Task<name=b3step2>(run='python3 - <<'PY'\nim...')
+  resources: Kubernetes(cpus=1, mem=1, region=kind-skypilot)]
+Processing task 0/0: b3step2
+Starting task 0 (b3step2) for job 10
+Task 0 (b3step2) has already been executed (FAILED_CONTROLLER). Skipping...
+Task 0 completed in 0.00s with success=False
+Task 0 failed, stopping execution
+Cancellation skipped, job is already terminal
+Cancellation skipped, job is not CANCELLING
+Cluster(s) not found: [1mb3step2-10[0m.
+b3step2-10 is down
+Cluster of managed job 10 has been cleaned up.
+

@@ -1,0 +1,21 @@
+YAML to run: train.yaml
+[33mEnsuring the jobs controller sky-jobs-controller-11b1fa5c is up before continuing job launch...[0m
+[0m⚙︎ Syncing files.
+Auto-stop is not supported for Kubernetes and RunPod clusters. Skipping.
+Run commands not specified or empty.
+
+[33mLaunching managed job 'astep1' from jobs controller...[0m
+[0m⚙︎ Syncing files.
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/managed-user-dag-astep1-n3l7l1cg -> ~/.sky/managed_jobs/astep1-2343.original_user_yaml[0m
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/managed-dag-astep1-7rmf35f7 -> ~/.sky/managed_jobs/astep1-2343.yaml[0m
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/tmpiagy36n0 -> ~/.sky/managed_jobs/astep1-2343.config_yaml[0m
+[0m[32m✓ Synced file_mounts.[0m[0m  [2mView logs: sky api logs -l sky-2026-11-13-02-55-47-851937/file_mounts.log[0m
+Auto-stop is not supported for Kubernetes and RunPod clusters. Skipping.
+[0m⚙︎ Job submitted, ID: 2
+
+📋 Useful Commands
+Managed Job ID: 2
+├── To cancel the job:		sky jobs cancel 2
+├── To stream job logs:		sky jobs logs 2
+├── To stream controller logs:	sky jobs logs --controller 2
+└── To view all managed jobs:	sky jobs queue

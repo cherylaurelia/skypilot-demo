@@ -1,0 +1,5 @@
+11:Controller process for 8 seems to be dead.
+12:Controller process for job 8 has exited abnormally. Setting the job status to FAILED_CONTROLLER.
+13:Controller process has exited abnormally (Controller process is dead). For more details, run: sky jobs logs --controller 8
+   1200 Fri Nov 13 06:46:50 2026
+  59759 Fri Nov 13 07:26:51 2026

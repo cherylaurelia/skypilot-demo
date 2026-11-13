@@ -1,0 +1,4 @@
+08:17:04 job id 4, clock step 60s
+08:17:41 RUNNING at checkpoint step 5; btime before: btime 1794552324
+08:17:42 stepped VM clock by 60s; btime after: btime 1794552384
+08:17:44 job=RUNNING pod=astep3-4-11b1fa5c-head

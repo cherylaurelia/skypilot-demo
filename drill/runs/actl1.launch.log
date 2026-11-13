@@ -1,0 +1,34 @@
+YAML to run: train.yaml
+[33mEnsuring the jobs controller sky-jobs-controller-11b1fa5c is up before continuing job launch...[0m
+Choosing resources for managed jobs controller...
+Considered resources (1 node):
+--------------------------------------------------------------------------------------
+ INFRA                        INSTANCE   vCPUs   Mem(GB)   GPUS   COST ($)   CHOSEN   
+--------------------------------------------------------------------------------------
+ Kubernetes (kind-skypilot)   -          1       2         -      0.00       [32m   ✔[0m     
+--------------------------------------------------------------------------------------
+[0m⚙︎ Launching managed jobs controller on Kubernetes.
+[2m└── [0m[2mPod is up.[0m
+[0m[32m✓ Cluster launched: sky-jobs-controller-11b1fa5c.[0m[0m  [2mView logs: [1msky logs --provision sky-jobs-controller-11b1fa5c[0m[0m
+[0m⚙︎ Syncing files.
+[0m⚙︎ Running setup on managed jobs controller.
+[1/3] Check & install cloud dependencies on controller: uv                    [2/3] Check & install cloud dependencies on controller: Kubernetes                    [3/3] Check & install cloud dependencies on controller: cloud python packages                      Check & install cloud dependencies on controller: done.                    
+[0m[32m✓ Setup completed.[0m[0m  [2mView logs: sky api logs -l sky-2026-11-13-02-47-51-155527/setup-*.log[0m
+Auto-stop is not supported for Kubernetes and RunPod clusters. Skipping.
+Run commands not specified or empty.
+
+[33mLaunching managed job 'actl1' from jobs controller...[0m
+[0m⚙︎ Syncing files.
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/managed-user-dag-actl1-a7aycuwf -> ~/.sky/managed_jobs/actl1-f00a.original_user_yaml[0m
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/managed-dag-actl1-d07n09f8 -> ~/.sky/managed_jobs/actl1-f00a.yaml[0m
+  [2mSyncing (to 1 node): /var/folders/nf/13f9qd450fv9vnyx8_k7qxz80000gn/T/tmphssj089j -> ~/.sky/managed_jobs/actl1-f00a.config_yaml[0m
+[0m[32m✓ Synced file_mounts.[0m[0m  [2mView logs: sky api logs -l sky-2026-11-13-02-48-03-292314/file_mounts.log[0m
+Auto-stop is not supported for Kubernetes and RunPod clusters. Skipping.
+[0m⚙︎ Job submitted, ID: 1
+
+📋 Useful Commands
+Managed Job ID: 1
+├── To cancel the job:		sky jobs cancel 1
+├── To stream job logs:		sky jobs logs 1
+├── To stream controller logs:	sky jobs logs --controller 1
+└── To view all managed jobs:	sky jobs queue

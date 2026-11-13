@@ -1,0 +1,14 @@
+07:35:02 job id 10, clock step 60s
+07:35:35 RUNNING at checkpoint step 6; btime before: btime 1794552325
+07:35:35 stepped VM clock by 60s; btime after: btime 1794552384
+07:35:38 job=RUNNING pod=b3step2-10-11b1fa5c-head
+07:36:57 job=FAILED_CONTROLLER pod=none
+07:36:58 end btime: btime 1794552384
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS             PROGRESS  POOL  
+10  -     b3step2  1x[CPU:1]  2 mins ago   2m 57s         2m 39s        0            FAILED_CONTROLLER  -         -     
+53:Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+72:sky.exceptions.ManagedJobStatusError: Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+74:Unexpected error occurred: [sky.exceptions.ManagedJobStatusError] Failed to set the task to recovering with force_transit_to_recovering=False. (0 rows updated. 1 rows matched job 10 and task 0. Status: FAILED_CONTROLLER, End time: 1794555473.7777088.)
+81:Task 0 (b3step2) has already been executed (FAILED_CONTROLLER). Skipping...
+88:Cluster of managed job 10 has been cleaned up.

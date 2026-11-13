@@ -1,0 +1,23 @@
+=== ctl1 step=0 2026-11-13T06:46:33Z Now drawing from 'AC Power'
+06:46:52 job id 1, clock step 0s
+06:47:31 RUNNING at checkpoint step 5; btime before: btime 1794552325
+06:47:33 job=RUNNING pod=ctl1-1-11b1fa5c-head
+06:50:34 job=SUCCEEDED pod=none
+06:50:34 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME  REQUESTED  SUBMITTED   TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+1   -     ctl1  1x[CPU:1]  3 mins ago  3m 28s         3m 2s         0            SUCCEEDED  -         -     
+122:Cluster of managed job 1 has been cleaned up.
+=== step1 step=60 2026-11-13T06:50:40Z Now drawing from 'AC Power'
+06:50:49 job id 2, clock step 60s
+06:51:23 RUNNING at checkpoint step 5; btime before: btime 1794552325
+06:51:24 stepped VM clock by 60s; btime after: btime 1794552384
+06:51:26 job=RUNNING pod=step1-2-11b1fa5c-head
+06:54:21 job=SUCCEEDED pod=step1-2-11b1fa5c-head
+06:54:22 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME   REQUESTED  SUBMITTED   TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+2   -     step1  1x[CPU:1]  3 mins ago  3m 23s         3m 2s         0            SUCCEEDED  -         -     
+119:Cluster of managed job 2 has been cleaned up.
+=== ctl2 step=0 2026-11-13T06:54:27Z Now drawing from 'AC Power'
+06:54:36 job id 3, clock step 0s

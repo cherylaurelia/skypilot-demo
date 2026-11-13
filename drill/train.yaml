@@ -1,0 +1,33 @@
+name: drill-train
+
+resources:
+  infra: k8s
+  cpus: 1
+  memory: 1
+
+envs:
+  RUN_ID: default
+  STEPS: 60
+
+volumes:
+  /checkpoint: ckpt
+
+run: |
+  python3 - <<'PY'
+  import json, os, time
+  path = f"/checkpoint/{os.environ['RUN_ID']}.json"
+  step = 0
+  if os.path.exists(path):
+      step = json.load(open(path))['step']
+      print(f'RESUMED from step {step}', flush=True)
+  else:
+      print('STARTED from step 0', flush=True)
+  while step < int(os.environ['STEPS']):
+      time.sleep(3)
+      step += 1
+      tmp = path + '.tmp'
+      json.dump({'step': step}, open(tmp, 'w'))
+      os.replace(tmp, path)
+      print(f'step {step}', flush=True)
+  print('DONE at step', step, flush=True)
+  PY

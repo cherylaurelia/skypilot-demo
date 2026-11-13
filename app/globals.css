@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Colors from skypilot.ai's CSS (carbon, creme, danger, blue). Their fonts are licensed, so Inter
+   and JetBrains Mono stand in for KMR Waldenburg and Berkeley Mono. */
+@theme {
+  --color-bg: #fefaf3;
+  --color-surface: #ffffff;
+  --color-carbon: #243142;
+  --color-muted: #4b5666;
+  --color-line: #e0dcdd;
+  --color-blue: #0a55ee;
+  --color-danger: #a32619;
+  --color-danger-soft: #fbe3e0;
+  --color-ok: #1d6b3a;
+  --color-ok-soft: #e1f3e6;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jbmono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-carbon);
+  font-family: var(--font-sans);
+}
+
+/* Show code exactly as written: no ligatures turning != into a math sign. */
+code,
+pre {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}

@@ -1,0 +1,10 @@
+07:03:23 job id 5, clock step 60s
+07:03:52 RUNNING at checkpoint step 5; btime before: btime 1794552325
+07:03:52 stepped VM clock by 60s; btime after: btime 1794552384
+07:03:55 job=RUNNING pod=b2step1-5-11b1fa5c-head
+07:10:46 job=SUCCEEDED pod=b2step1-5-11b1fa5c-head
+07:10:46 end btime: btime 1794552325
+Fetching managed job statuses...
+ID  TASK  NAME     REQUESTED  SUBMITTED    TOT. DURATION  JOB DURATION  #RECOVERIES  STATUS     PROGRESS  POOL  
+5   -     b2step1  1x[CPU:1]  7 mins ago   7m 21s         7m 4s         0            SUCCEEDED  -         -     
+199:Cluster of managed job 5 has been cleaned up.
